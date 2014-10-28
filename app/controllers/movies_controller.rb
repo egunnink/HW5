@@ -79,7 +79,6 @@ class MoviesController < ApplicationController
   end
 
   def add_tmdb
-    binding.pry
     :tmdb_movies.keys.each do |id|
       Movie.create_from_tmdb(id)
     end

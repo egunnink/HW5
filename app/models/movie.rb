@@ -7,7 +7,7 @@ class Movie < ActiveRecord::Base
   	# search db
     Tmdb::Api.key("f4702b08c0ac6ea5b51425788bb26562")
     selected_movies = Tmdb::Movie.find(query)
-    
+
     # make hash
     movies_found = []
   	selected_movies.each do |movie|
@@ -37,6 +37,5 @@ class Movie < ActiveRecord::Base
   			:rating => 'R'
   		)
   	end
-  	binding.pry
   end
 end
