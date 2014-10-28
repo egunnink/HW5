@@ -44,6 +44,18 @@ gem 'jquery-rails'
 # use Haml for templates
 gem 'haml'
 
+# use rspec for testing
+gem 'rspec-rails'
+
+# use TMDb for data base serching
+gem 'themoviedb'
+
+# use pry for debugging
+gem 'pry'
+
+# use simple conv for coverage testing
+gem 'simplecov', :require => false
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
